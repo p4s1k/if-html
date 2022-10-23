@@ -1,4 +1,4 @@
-.header {
+.heading {
   margin: 120px 0 20px 0;
   text-align: center;
   color: #383838;
@@ -14,8 +14,8 @@
 }
 .advantage-blocks-container {
   text-align: center;
-  font-weight: 400;
   font-size: 24px;
+  font-weight: 400;
 }
 .advantage-block {
   display: inline-block;
