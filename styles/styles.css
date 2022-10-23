@@ -1,0 +1,24 @@
+.heading {
+  margin: 120px 0 20px 0;
+  text-align: center;
+  color: #383838;
+  font-size: 50px;
+  font-weight: 500;
+}
+.underline {
+  height: 4px;
+  width: 100px;
+  background: #f5bd41;
+  border: 0;
+  margin-bottom: 80px;
+}
+.advantage-blocks-container {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+}
+.advantage-block {
+  display: inline-block;
+  width: 300px;
+  height: 175px;
+}
