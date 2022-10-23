@@ -5,7 +5,7 @@
   font-size: 50px;
   font-weight: 500;
 }
-.stroke {
+.underline {
   height: 4px;
   width: 100px;
   background: #f5bd41;
@@ -14,6 +14,8 @@
 }
 .advantage-blocks-container {
   text-align: center;
+  font-weight: 400;
+  font-size: 24px;
 }
 .advantage-block {
   display: inline-block;
