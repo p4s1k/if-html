@@ -9,6 +9,155 @@
   padding: 120px 0;
   font-family: "Roboto", sans-serif;
 }
+.top-selection > .wrapper {
+  padding: 51px 0 0;
+}
+.top-selection-container {
+  display: flex;
+  flex-direction: column;
+  gap: 196px;
+}
+
+.top-selection {
+  background-image: url("../img/castelmezzano.png");
+  background-size: cover;
+  min-height: 100vh;
+}
+.sprite {
+  background-image: url("../img/top-selection-sprite.png");
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.panel {
+  display: flex;
+  justify-content: space-between;
+}
+.site-logo {
+  width: 205px;
+  height: 40px;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+.menu-list {
+  display: flex;
+
+  gap: 24px;
+  list-style: none;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #ffffff;
+}
+.menu-buttons {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.theme-button {
+  width: 30px;
+  height: 30px;
+  background-position: -205px 0;
+}
+.profile-button {
+  width: 40px;
+  height: 40px;
+  background-position: -235px 0;
+}
+.menu-underline {
+  display: flex;
+  justify-content: end;
+}
+.menu-underline hr {
+  width: 50px;
+  height: 4px;
+  background: #f5bd41;
+  border: 0;
+  margin: 0 288px 0 0;
+}
+.top-selection-content {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+.top-selection-content-heading {
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 59px;
+  color: #ffffff;
+}
+.search-block {
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+}
+.check-in-form {
+  display: flex;
+  align-items: flex-end;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.check-in-form input {
+  display: inline-block;
+  border: 0;
+  padding: 0 24px;
+  height: 64px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+.check-in-form label {
+  color: #ffffff;
+  margin: 0 24px 24px;
+}
+.check-in-form input {
+  color: #383838;
+}
+.check-in-form-element {
+  display: flex;
+  flex-direction: column;
+}
+#name {
+  width: 419px;
+}
+#date-in {
+  width: 211px;
+}
+#filter {
+  width: 266px;
+}
+
+.check-in-form button {
+  height: 64px;
+  padding: 0 57px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  background: #3077c6;
+  color: #ffffff;
+}
+.marketplace-block {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+.google-play {
+  width: 135px;
+  height: 40px;
+  background-position: -275px 0;
+}
+.app-store {
+  width: 120px;
+  height: 40px;
+  background-position: -412px 0;
+}
 .advantages-container {
   display: flex;
   flex-direction: column;
