@@ -58,6 +58,7 @@
   padding-top: 5px;
   gap: 24px;
 }
+
 .menu-list {
   list-style: none;
   font-weight: 400;
@@ -96,7 +97,7 @@
 }
 
 .top-selection-content__container {
-  gap: 100px;
+  gap: 142px;
 }
 
 .top-selection__heading {
@@ -112,13 +113,16 @@
 .search-form {
   display: flex;
   align-items: flex-end;
+  height: 64px;
+  border-radius: 8px;
+  background: #ffffff;
   font-weight: 400;
   font-size: 18px;
 }
 
 .search-form input {
-  display: inline-block;
-  border: 0;
+  box-sizing: border-box;
+  color: #383838;
   padding: 0 24px;
   height: 64px;
   font-weight: 400;
@@ -131,24 +135,26 @@
   margin: 0 24px 21px;
 }
 
-.search-form input {
-  color: #383838;
-}
-
-.search-form__item-container {
+.search-form__items-container {
 }
 
 .search-form__item-name {
-  width: 419px;
+  width: 467px;
   border-radius: 8px 0 0 8px;
+  border: 0;
 }
 
 .search-form__item-date {
-  width: 211px;
+  width: 259px;
+  border: 1px solid #cecece;
+  border-radius: 8px;
 }
 
 .search-form__item-filter {
-  width: 266px;
+  width: 314px;
+  box-sizing: content-box;
+  border: 0;
+
 }
 
 .search-form__item-button {
@@ -159,8 +165,8 @@
   line-height: 28px;
   background: #3077c6;
   color: #ffffff;
+  border: 1px solid #3077c6;
   border-radius: 8px;
-  border: 0;
 }
 
 .top-selection__downloads {
