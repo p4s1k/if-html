@@ -11,53 +11,216 @@
   font-family: "Roboto", sans-serif;
 }
 
-.advantages-container {
+.container {
   display: flex;
   flex-direction: column;
+}
+
+.row {
+  display: flex;
+  justify-content: stretch;
+}
+
+.top-selection__wrapper {
+  padding: 51px 0 0;
+}
+
+.top-selection__container {
+  gap: 196px;
+}
+
+.top-selection {
+  background-image: url("../img/castelmezzano.png");
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.header__panel {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logo {
+  width: 205px;
+  height: 40px;
+}
+
+.header__menu-row {
+  display: flex;
+  gap: 48px;
+}
+
+.header__menu-list {
+  display: flex;
+  padding-top: 5px;
+  gap: 24px;
+}
+
+.menu-list {
+  list-style: none;
+  font-weight: 400;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.header__menu-icons {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.header__icon-theme {
+  width: 30px;
+  height: 30px;
+}
+
+.header__icon-profile {
+  width: 40px;
+  height: 40px;
+}
+
+.header__underline {
+  display: flex;
+  margin-top: 2px;
+  justify-content: end;
+}
+
+.header__underline hr {
+  width: 50px;
+  height: 4px;
+  background: #f5bd41;
+  border: 0;
+  margin: 0 288px 0 0;
+}
+
+.top-selection-content__container {
+  gap: 142px;
+}
+
+.top-selection__heading {
+  font-weight: 500;
+  font-size: 50px;
+  color: #ffffff;
+}
+
+.top-selection__search-block-container {
+  gap: 120px;
+}
+
+.search-form {
+  display: flex;
+  align-items: flex-end;
+  height: 64px;
+  border-radius: 8px;
+  background: #ffffff;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.search-form input {
+  box-sizing: border-box;
+  color: #383838;
+  padding: 0 24px;
+  height: 64px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.search-form label {
+  color: #ffffff;
+  margin: 0 24px 21px;
+}
+
+.search-form__items-container {
+}
+
+.search-form__item-name {
+  width: 467px;
+  border-radius: 8px 0 0 8px;
+  border: 0;
+}
+
+.search-form__item-date {
+  width: 259px;
+  border: 1px solid #cecece;
+  border-radius: 8px;
+}
+
+.search-form__item-filter {
+  width: 314px;
+  box-sizing: content-box;
+  border: 0;
+}
+
+.search-form__item-button {
+  height: 64px;
+  padding: 0 57px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  background: #3077c6;
+  color: #ffffff;
+  border: 1px solid #3077c6;
+  border-radius: 8px;
+}
+
+.top-selection__downloads {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.top-selection__android-download {
+  width: 135px;
+  height: 40px;
+}
+
+.top-selection__apple-download {
+  width: 120px;
+  height: 40px;
+}
+
+.advantages__container {
   gap: 80px;
   color: #383838;
 }
 
-.advantages-heading-container {
-  display: flex;
-  flex-direction: column;
+.advantages-heading__container {
   align-items: center;
   gap: 20px;
 }
 
-.advantages-heading-title {
+.advantages__heading-title {
   font-weight: 500;
   font-size: 40px;
   line-height: 47px;
 }
 
-.advantages-heading-underline {
+.advantages__heading-underline {
   width: 100px;
   height: 4px;
   background: #f5bd41;
   border: 0;
 }
 
-.advantages-items-container {
-  display: flex;
-  justify-content: stretch;
+.advantages__items-row {
   gap: 16px;
 }
 
-.advantages-item {
-  display: flex;
-  flex-direction: column;
+.advantages-item__container {
   align-items: center;
   gap: 48px;
   width: 25%;
   flex-grow: 1;
 }
 
-.image {
+.advantages-item__icon {
   width: 100px;
+  height: 100px;
 }
 
-.advantages-item-title {
+.advantages-item__title {
   font-weight: 400;
   font-size: 24px;
   line-height: 28px;
@@ -68,40 +231,32 @@
   color: #ffffff;
 }
 
-.footer-container {
-  display: flex;
-  flex-direction: column;
+.footer__container {
   gap: 40px;
 }
 
-.footer-list-container {
-  display: flex;
-  justify-content: stretch;
+.footer__row {
   gap: 16px;
 }
 
-.footer-list-item {
+.footer-list {
   width: 33.33%;
   flex-grow: 1;
-}
-
-.footer-list-item ul {
   list-style: none;
-  margin: 0;
   padding: 0;
   font-weight: 500;
   font-size: 20px;
   line-height: 23px;
 }
 
-.footer-list-item li {
+.footer-list__item {
   font-weight: 400;
   font-size: 20px;
   line-height: 23px;
   margin: 24px 0;
 }
 
-.rights {
+.footer__rights {
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
