@@ -83,18 +83,16 @@
   height: 40px;
 }
 
-.header__underline {
-  display: flex;
-  margin-top: 2px;
-  justify-content: end;
+.header__icon-burger {
+  display: none;
 }
 
-.header__underline hr {
+.header__underline {
+  margin: 0 auto;
   width: 50px;
   height: 4px;
   background: #f5bd41;
   border: 0;
-  margin: 0 288px 0 0;
 }
 
 .top-selection-content__container {
@@ -114,17 +112,24 @@
 .search-form {
   display: flex;
   flex-wrap: wrap;
-  align-content: flex-end;
   align-items: flex-end;
-  height: 64px;
-  border-radius: 8px;
-  background: #ffffff;
   font-weight: 400;
   font-size: 18px;
 }
 
+.form{
+  display: none;
+}
+
+.input-block {
+  background: #ffffff;
+}
+
 .search-form input {
   box-sizing: border-box;
+  border-radius: 8px;
+  outline-color: #f5bd41;
+  outline-width: 3px;
   color: #383838;
   padding: 0 24px;
   height: 64px;
@@ -139,35 +144,49 @@
 }
 
 .search-form__item-name-container {
-  max-width: 467px;
+  flex-grow: 1;
+  min-width: 467px;
 }
 
 .search-form__item-date-container {
-  max-width: 259px;
-}
-
-.form-item {
+  min-width: 259px;
   flex-grow: 1;
 }
 
+.input-block_name {
+  border-radius: 8px 0 0 8px;
+}
+
 .search-form__item-name {
+  width: 100%;
   border-radius: 8px 0 0 8px;
   border: 0;
 }
 
 .search-form__item-date {
+  width: 100%;
   border: 1px solid #cecece;
-  border-radius: 8px;
+}
+
+.input-block_filter {
+  min-width: 314px;
+  flex-grow: 1;
 }
 
 .search-form__item-filter {
-  max-width: 314px;
+  width: 100%;
   box-sizing: content-box;
   border: 0;
 }
 
+.input-block_button {
+  border-radius: 0 8px 8px 0;
+  min-width: 192px;
+  flex: 1;
+}
+
 .search-form__item-button {
-  max-width: 192px;
+  width: 100%;
   height: 64px;
   padding: 0 57px;
   font-weight: 500;
@@ -291,11 +310,189 @@
   .advantages-item__container {
     flex: 50%;
   }
+  .input-block {
+    background: none;
+  }
+  .search-form__item-name-container {
+    min-width: 100%;
+  }
+  .search-form__item-date-container {
+    min-width: 100%;
+  }
 }
 
 @media only screen and (max-width: 480px) {
   .wrapper {
     padding: 40px 16px;
+  }
+
+  .top-selection__wrapper{
+    padding-top: 0;
+  }
+  .header{
+    padding: 12px 0;
+  }
+
+  .top-selection__container{
+    gap: 40px;
+  }
+
+  .header__logo{
+    width: 122px;
+    height: 24px;
+  }
+
+  .header__menu-row {
+    gap: 16px;
+  }
+
+  .header__icon-theme{
+    width: 16px;
+    height: 16px;
+  }
+
+  .header__icon-profile{
+    width: 24px;
+    height: 24px;
+  }
+
+  .header__icon-burger {
+    display: inline-block;
+    width: 24px;
+    height: 16px;
+  }
+
+  .menu-list {
+    display: none;
+  }
+
+  .header__menu-icons {
+    gap: 16px;
+  }
+
+  .top-selection__heading{
+    font-size: 30px;
+    line-height: 35px;
+
+  }
+
+  .top-selection-content__container{
+    gap: 31px;
+  }
+
+  .top-selection__search-block-container{
+    gap: 32px;
+  }
+
+  .search-form{
+    display: none;
+  }
+
+  .form {
+    padding: 4px;
+    display: flex;
+    flex-direction: column;
+    background: #f5bd41;
+  }
+
+  .form *{
+    box-sizing: border-box;
+  }
+
+  .form label{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .form input {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    outline: none;
+    border: none;
+    width: 100%;
+    color: #383838;
+    padding: 0;
+  }
+
+  .form > div {
+    margin: 4px;
+    min-height: 48px;
+    display: flex;
+    border-radius: 4px;
+  }
+
+  .destination {
+    align-items: center;
+    padding: 0 12px;
+    border-radius: 4px;
+    background: #ffffff;
+  }
+
+  .destination svg {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+  }
+
+  .date {
+    gap: 8px;
+  }
+
+  .check-in {
+    height: 100%;
+    padding: 3px 8px 6px;
+    border-radius: 4px;
+    flex-direction: column;
+    background: #ffffff;
+    width: calc(50% - 4px);
+  }
+  .check-out {
+    padding: 3px 8px 6px;
+    border-radius: 4px;
+    flex-direction: column;
+    height: 100%;
+    background: #ffffff;
+    width: calc(50% - 4px);
+  }
+
+  .filter {
+    padding: 6px 8px;
+    border-radius: 4px;
+    background: #ffffff;
+  }
+
+  .filter div {
+    display: flex;
+    flex-direction: column;
+    width: 33.333%;
+  }
+
+  .filter label {
+    margin-bottom: 4px;
+  }
+
+  .adults {
+    border-right: solid 1px #383838;
+  }
+  .children {
+    padding-left: 5px;
+  }
+  .rooms {
+    padding-left: 10px;
+    border-left: solid 1px #383838;
+  }
+  .button button{
+    border-radius: 4px;
+  }
+  .button button {
+    width: 100%;
+    border: none;
+    font-weight: 500;
+    font-size: 19px;
+    color: #ffffff;
+    background: #3077c6;
   }
 
   .advantages__container {
@@ -364,8 +561,4 @@
   .footer__logo {
     display: none;
   }
-}
-
-.top-selection{
-  display: none;
 }
