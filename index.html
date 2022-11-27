@@ -17,7 +17,7 @@
                   <use href="./img/sprite.svg#logo" />
                 </svg>
               </button>
-              <div class="header__menu-row">
+              <nav class="header__menu-row">
                 <ul class="menu-list header__menu-list">
                   <li>
                     <a href="#">Stays</a>
@@ -43,10 +43,10 @@
                     </svg>
                   </button>
                 </div>
-              </div>
+              </nav>
             </div>
           </header>
-          <div class="container top-selection-content__container">
+          <section class="container top-selection-content__container">
             <h1 class="top-selection__heading">
               Discover stays<br />
               to live, work or just relax
@@ -69,18 +69,18 @@
                 </div>
                 <div class="container search-form__item-date-container">
                   <label for="date-in">Check-in — Check-out</label>
-                  <div class="input-block_date input-block">
+                  <div class="input-block__date input-block">
                     <input
                       class="search-form__check-date"
                       id="date-in"
                       type="date"
                     />
                   </div>
-                  <div class="search-form__check-in">
+                  <div class="search-form__check-date_mobile">
                     <label for="in">Check-in date</label>
                     <input id="in" type="date" />
                   </div>
-                  <div class="seacrh-form__check-out">
+                  <div class="search-form__check-date_mobile">
                     <label for="out">Check-out date</label>
                     <input id="out" type="date" />
                   </div>
@@ -275,101 +275,218 @@
                 </button>
               </div>
             </div>
-          </div>
+          </section>
         </div>
       </div>
     </div>
-    <div class="advantages">
-      <div class="wrapper">
+    <section class="advantages">
+      <div class="wrapper advantages__wrapper">
         <div class="container advantages__container">
-          <div class="container advantages-heading__container">
-            <h2 class="heading advantages__heading-title">What do we offer</h2>
-          </div>
-          <div class="row advantages-items__row">
-            <div class="container advantages-item__container">
-              <svg class="advantages-item__icon">
-                <use href="./img/sprite.svg#headset" />
-              </svg>
-              <div class="advantages-item__title">Support 24/7</div>
+          <h2 class="heading advantages__heading-title">What do we offer</h2>
+          <div class="cards-row advantages__cards-row">
+            <div class="card advantages__card">
+              <div class="card__image advantages__card__image">
+                <svg>
+                  <use href="./img/sprite.svg#headset" />
+                </svg>
+              </div>
+              <span class="advantages__card__title card__title"
+                >Support 24/7</span
+              >
             </div>
-            <div class="container advantages-item__container">
-              <svg class="advantages-item__icon">
-                <use href="./img/sprite.svg#forum" />
-              </svg>
-              <div class="advantages-item__title">Communicate directly</div>
+            <div class="card advantages__card">
+              <div class="card__image advantages__card__image">
+                <svg>
+                  <use href="./img/sprite.svg#forum" />
+                </svg>
+              </div>
+              <span class="advantages__card__title card__title"
+                >Communicate directly</span
+              >
             </div>
-            <div class="container advantages-item__container">
-              <svg class="advantages-item__icon">
-                <use href="./img/sprite.svg#devices" />
-              </svg>
-              <div class="advantages-item__title">Book online</div>
+            <div class="card advantages__card">
+              <div class="card__image advantages__card__image">
+                <svg>
+                  <use href="./img/sprite.svg#devices" />
+                </svg>
+              </div>
+              <span class="advantages__card__title card__title"
+                >Book online</span
+              >
             </div>
-            <div class="container advantages-item__container">
-              <svg class="advantages-item__icon">
-                <use href="./img/sprite.svg#thumb" />
-              </svg>
-              <div class="advantages-item__title">Real guest reviews</div>
+            <div class="card advantages__card">
+              <div class="card__image advantages__card__image">
+                <svg>
+                  <use href="./img/sprite.svg#thumb" />
+                </svg>
+              </div>
+              <span class="advantages__card__title card__title"
+                >Real guest reviews</span
+              >
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="homes">
+    </section>
+    <section class="homes">
       <div class="wrapper">
         <div class="container homes__container">
           <h2 class="heading homes__heading">Homes guests loves</h2>
-          <div class="row homes__row">
-            <div class="item homes-item homes-item_mobile">
-              <div class="homes-item__image">
+          <div class="cards-row homes__cards-row">
+            <div class="card homes__card">
+              <div class="card__image homes__card__image">
                 <img src="./img/hotel-leopold.png" alt="view" />
               </div>
-              <div class="homes-item__title">Hotel Leopold</div>
-              <div class="homes-item__description">
+              <span class="homes__card__title card__title">Hotel Leopold</span>
+              <span class="card__location homes__card__location">
                 Saint Petersburg, Russia
-              </div>
+              </span>
             </div>
-            <div class="item homes-item homes-item_mobile">
-              <div class="homes-item__image">
+            <div class="card homes__card">
+              <div class="card__image homes__card__image">
                 <img src="./img/apartment-sunshine.png" alt="view" />
-                <div class="homes-navigation homes-navigation_mobile">
-                  <svg class="homes-navigation__button_next">
+                <div class="arrow-button arrow-button_mobile">
+                  <svg>
                     <use href="./img/sprite.svg#navigation-mobile" />
                   </svg>
                 </div>
               </div>
-              <div class="homes-item__title">Apartment Sunshine</div>
-              <div class="homes-item__description">
-                Santa Cruz de Tenerife, Spain
-              </div>
+              <span class="homes__card__title card__title"
+                >Apartment Sunshine</span
+              >
+              <span class="card__location homes__card__location">
+                Santa Cruz de Tenerife,<br />Spain
+              </span>
             </div>
-            <div class="item homes-item">
-              <div class="homes-item__image">
+            <div class="card homes__card card_not-mobile">
+              <div class="card__image homes__card__image">
                 <img src="./img/villa-kunerad.png" alt="view" />
               </div>
-              <div class="homes-item__title">Villa Kunerad</div>
-              <div class="homes-item__description">Vysokie Tatry, Slowakia</div>
+              <span class="homes__card__title card__title">Villa Kunerad</span>
+              <span class="card__location homes__card__location"
+                >Vysokie Tatry, Slowakia</span
+              >
             </div>
-            <div class="item homes-item">
-              <div class="homes-item__image">
+            <div class="card homes__card card_not-mobile">
+              <div class="card__image homes__card__image">
                 <img src="./img/hostel-friendship.png" alt="view" />
-                <div class="homes-navigation homes-navigation_desktop">
-                  <svg class="homes-navigation__button_next">
+                <div class="arrow-button arrow-button_desktop">
+                  <svg>
                     <use href="./img/sprite.svg#navigation" />
                   </svg>
                 </div>
               </div>
-              <div class="homes-item__title">Hostel Friendship</div>
-              <div class="homes-item__description">Berlin, Germany</div>
+              <span class="homes__card__title card__title"
+                >Hostel Friendship</span
+              >
+              <span class="card__location homes__card__location"
+                >Berlin, Germany</span
+              >
             </div>
-            <div class="homes-navigation homes-navigation_tablet">
-              <svg class="homes-navigation__button_next">
+            <div class="arrow-button arrow-button_tablet">
+              <svg>
                 <use href="./img/sprite.svg#navigation" />
               </svg>
-            </div>
             </div>
           </div>
         </div>
       </div>
+    </section>
+    <section class="destinations">
+      <div class="wrapper destinations-wrapper__wrapper">
+        <h1 class="heading destinations__heading">The best destinations</h1>
+        <div class="destinations__category-panel">
+          <button
+            class="destination__category-button category-button__regions-button"
+          >
+            Regions
+          </button>
+          <button
+            class="destination__category-button category-button__cities-button"
+          >
+            Cities
+          </button>
+          <button
+            class="destination__category-button category-button__places-button"
+          >
+            Places of interest
+          </button>
+          <button
+            class="destination__category-button category-button__places-button_mobile"
+          >
+            Places
+          </button>
+        </div>
+        <div class="cards-row destinations__cards-row">
+          <div class="card destinations__card">
+            <div class="card__image destinations-card__image">
+              <img src="./img/maldives.png" alt="Maldives-view" />
+            </div>
+            <span class="card__title destinations__card__title">Maldives</span>
+          </div>
+          <div class="card destinations__card">
+            <div class="card__image destinations-card__image">
+              <img src="./img/spain.png" alt="Spain-view" />
+            </div>
+            <span class="card__title destinations__card__title">Spain</span>
+          </div>
+          <div class="card destinations__card card_not-mobile">
+            <div class="card__image destinations-card__image">
+              <img src="./img/norway.png" alt="Norway-view" />
+            </div>
+            <span class="card__title destinations__card__title">Norway</span>
+          </div>
+          <div class="card destinations__card card_not-mobile">
+            <div class="card__image destinations-card__image">
+              <img src="./img/island.png" alt="Island-view" />
+            </div>
+            <span class="card__title destinations__card__title">Island</span>
+          </div>
+          <div class="arrow-button">
+            <svg class="arrow-button__arrow_right">
+              <use href="./img/sprite.svg#navigation" />
+            </svg>
+          </div>
+          <div
+            class="arrow-button arrow-button_desktop arrow-button_tablet arrow-button_down"
+          >
+            <svg class="arrow-button__arrow_down">
+              <use href="./img/sprite.svg#navigation" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="ordinal-container">
+      <section class="sign-up">
+        <div class="wrapper sign-up__wrapper">
+          <div class="row sign-up__row">
+            <div class="sign-up__icon-container">
+              <svg class="sign-up__icon">
+                <use href="./img/sprite.svg#sign-up-icon" />
+              </svg>
+              <svg class="sign-up__icon_mobile">
+                <use href="./img/sprite.svg#logo" />
+              </svg>
+            </div>
+            <div class="sign-up__content">
+              <h2 class="heading sign-up__heading">
+                Sign up and get 20% off your first booking
+              </h2>
+              <button type="button" class="sigh-up__confirm-button">
+                Sign up
+              </button>
+            </div>
+            <div class="sing-up__close-button">
+              <svg class="sign-up__close-button-icon">
+                <use href="./img/sprite.svg#close-icon" />
+              </svg>
+            </div>
+            <a href="#" class="sigh-up__install-button">Install</a>
+          </div>
+        </div>
+      </section>
+    </div>
     <footer class="footer">
       <div class="wrapper">
         <div class="container footer__container">
