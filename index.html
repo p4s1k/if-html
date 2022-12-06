@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <title>What do we offer</title>
     <link rel="stylesheet" href="styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="node_modules/flag-icons/css/flag-icons.min.css"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
@@ -329,7 +333,7 @@
       </div>
     </section>
     <section class="homes">
-      <div class="wrapper">
+      <div class="wrapper homes__wrapper">
         <div class="container homes__container">
           <h2 class="heading homes__heading">Homes guests loves</h2>
           <div class="cards-row homes__cards-row">
@@ -394,7 +398,7 @@
     </section>
     <section class="destinations">
       <div class="wrapper destinations-wrapper__wrapper">
-        <h1 class="heading destinations__heading">The best destinations</h1>
+        <h2 class="heading destinations__heading">The best destinations</h2>
         <div class="destinations__category-panel">
           <button
             class="destination__category-button category-button__regions-button"
@@ -427,6 +431,11 @@
           <div class="card destinations__card">
             <div class="card__image destinations__card__image">
               <img src="./img/spain.png" alt="Spain-view" />
+              <div class="arrow-button arrow-button_mobile">
+                <svg>
+                  <use href="./img/sprite.svg#navigation-mobile" />
+                </svg>
+              </div>
             </div>
             <span class="card__title destinations__card__title">Spain</span>
           </div>
@@ -483,6 +492,155 @@
               </svg>
             </div>
             <a href="#" class="sigh-up__install-button">Install</a>
+          </div>
+        </div>
+      </section>
+      <section class="reviews">
+        <div class="wrapper">
+          <h2 class="heading reviews__heading">Guests reviews</h2>
+          <div class="cards-row">
+            <div class="card reviews__card">
+              <div class="card__image reviews__card__image">
+                <img src="./img/ubud-bali-resort&spa.png" alt="view" />
+                <div class="card__price">From 250 USD</div>
+              </div>
+              <div class="card__body">
+                <div class="card__top">
+                  <div class="card__top__text-container">
+                    <div class="card__title reviews__card__tittle">
+                      Ubud Bali Resort&SPA
+                    </div>
+                    <div class="card__location reviews__card__location">
+                      Bali, Indonesia
+                    </div>
+                  </div>
+                  <div class="card__top__rating-container">
+                    <div class="card__rating-grade">9,4</div>
+                    <div class="card__reviews-amount">1324 reviews</div>
+                  </div>
+                </div>
+                <div class="review">
+                  <div class="review__profile">
+                    <div class="profile__icon">
+                      <svg>
+                        <use href="img/sprite.svg#profile-icon" />
+                      </svg>
+                    </div>
+                    <div class="profile__text">
+                      <div class="profile__name">Hanna Ivanova</div>
+                      <div class="profile__location">
+                        <span class="fi fi-ua fis"></span> Ukraine
+                      </div>
+                    </div>
+                  </div>
+                  <div class="review__text">
+                    Great location, really pleasant and clean rooms, but the
+                    thing that makes this such a good place to stay are the
+                    staff. All of the people are incredibly helpful and generous
+                    with their time and advice.
+                  </div>
+                </div>
+                <div class="card__navigation">
+                  <div class="navigation__circle"></div>
+                  <div class="navigation__circle"></div>
+                  <div class="navigation__circle"></div>
+                  <div class="navigation__circle"></div>
+                </div>
+              </div>
+            </div>
+            <div class="card reviews__card card_not-mobile">
+              <div class="card__image reviews__card__image">
+                <img src="./img/king-kong-hostel.png" alt="view" />
+                <div class="card__price">From 40 USD</div>
+              </div>
+              <div class="card__body">
+                <div class="card__top">
+                  <div class="card__top__text-container">
+                    <div class="card__title reviews__card__tittle">
+                      King Kong Hostel
+                    </div>
+                    <div class="card__location reviews__card__location">
+                      Rotterdam, Netherlands
+                    </div>
+                  </div>
+                  <div class="card__top__rating-container">
+                    <div class="card__rating-grade">8,9</div>
+                    <div class="card__reviews-amount">2016 reviews</div>
+                  </div>
+                </div>
+                <div class="review">
+                  <div class="review__profile">
+                    <div class="profile__icon">
+                      <svg>
+                        <use href="img/sprite.svg#profile-icon" />
+                      </svg>
+                    </div>
+                    <div class="profile__text">
+                      <div class="profile__name">Adam Smith</div>
+                      <div class="profile__location">
+                        <span class="fi fi-us fis"></span> USA
+                      </div>
+                    </div>
+                  </div>
+                  <div class="review__text">
+                    I've been in this hostel for a month and here is the best
+                    hostel of all <br />
+                    Excellent management of excellent and ethical staff and
+                    bedrooms Bathrooms are always clean and excellent Most
+                    importantly, those who work here are kind and good-natured.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card reviews__card card_not-mobile">
+              <div class="card__image reviews__card__image">
+                <img src="./img/rokoko-hotel.png" alt="view" />
+                <div class="card__price">From 190 USD</div>
+                <div class="arrow-button arrow-button_desktop">
+                  <svg class="arrow-button__arrow_right">
+                    <use href="./img/sprite.svg#navigation" />
+                  </svg>
+                </div>
+              </div>
+              <div class="card__body">
+                <div class="card__top">
+                  <div class="card__top__text-container">
+                    <div class="card__title reviews__card__tittle">
+                      Rokoko Hotel
+                    </div>
+                    <div class="card__location reviews__card__location">
+                      Ourika, Marocco
+                    </div>
+                  </div>
+                  <div class="card__top__rating-container">
+                    <div class="card__rating-grade">9,1</div>
+                    <div class="card__reviews-amount">815 reviews</div>
+                  </div>
+                </div>
+                <div class="review">
+                  <div class="review__profile">
+                    <div class="profile__icon">
+                      <svg>
+                        <use href="img/sprite.svg#profile-icon" />
+                      </svg>
+                    </div>
+                    <div class="profile__text">
+                      <div class="profile__name">Anika Messer</div>
+                      <div class="profile__location">
+                        <span class="fi fi-de fis"></span> Germany
+                      </div>
+                    </div>
+                  </div>
+                  <div class="review__text">
+                    Efficient, friendly, professional, and appropriately
+                    attentive. Great hotel in a great location. Easy access to
+                    all the surrounding historical sites. Staff is fantastic.
+                    Will definitely stay at this location during my next stay in
+                    Marocco.
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
