@@ -19,5 +19,8 @@
   "homepage": "https://github.com/p4s1k/if-html#readme",
   "devDependencies": {
     "prettier": "2.7.1"
+  },
+  "dependencies": {
+    "flag-icons": "^6.6.6"
   }
 }
